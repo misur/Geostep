@@ -9,10 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var settingsDAO = SettingsDAO()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        if(settingsDAO.getLoggedUser() != ""){
+        
+         self.performSegueWithIdentifier("stepLogin", sender: self)
+        }
     }
 
     override func didReceiveMemoryWarning() {

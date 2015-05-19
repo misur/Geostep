@@ -8,8 +8,13 @@
 
 import UIKit
 import XCTest
+import Geostep
 
 class GeostepTests: XCTestCase {
+    
+var a = SettingsDAO.self
+    
+    
     
     override func setUp() {
         super.setUp()
@@ -22,6 +27,7 @@ class GeostepTests: XCTestCase {
     }
     
     func testExample() {
+      
         // This is an example of a functional test case.
         XCTAssert(true, "Pass")
     }
